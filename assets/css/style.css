@@ -181,6 +181,7 @@ header li {
 /* #endregion header */
 
 /* #region main */
+
 /* #region what we do section */
 .blue-box {
   background-color: var(--card-babyblue);
@@ -232,4 +233,5 @@ header li {
 .btn_apple {
   font-size: 1.1rem;
 }
-/* #enregion what we do section */
+/* #endregion what we do section */
+
