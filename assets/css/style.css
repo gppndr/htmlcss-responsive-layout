@@ -20,8 +20,14 @@
 
 .container {
   width: 70%;
-  max-width: 1200;
+  max-width: 1200px;
   margin: 0 auto;
+}
+
+.container_sm{
+    width: 60%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 section{
     padding: 2rem 0;
