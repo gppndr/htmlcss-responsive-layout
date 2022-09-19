@@ -7,3 +7,111 @@
   --text-cta: #fdc15f;
   --var-white: #ffffff;
 }
+
+/* #region common rules*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* #endregion */
+
+/* #region utility */
+
+.container {
+  width: 70%;
+  max-width: 1200;
+  margin: 0 auto;
+}
+ul li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+/* #region column */
+.col_1 {
+  width: calc(100% / 12 * 1);
+}
+.col_2 {
+  width: calc(100% / 12 * 2);
+}
+.col_3 {
+  width: calc(100% / 12 * 3);
+}
+.col_4 {
+  width: calc(100% / 12 * 4);
+}
+.col_5 {
+  width: calc(100% / 12 * 5);
+}
+.col_6 {
+  width: 50%;
+}
+.col_7 {
+  width: calc(100% / 12 * 7);
+}
+.col_8 {
+  width: calc(100% / 12 * 8);
+}
+.col_9 {
+  width: calc(100% / 12 * 9);
+}
+.col_10 {
+  width: calc(100% / 12 * 10);
+}
+.col_11 {
+  width: calc(100% / 12 * 11);
+}
+.col_12 {
+  width: 100%;
+}
+/* #endregion column */
+
+/* #region flex */
+.d_flex{
+    display: flex;
+}
+.row{
+    display: flex;
+}
+.gap1{
+    gap: 1rem;
+}
+.wrap{
+    flex-wrap: wrap;
+}
+.column{
+    flex-direction: column;
+}
+.sp_b{
+    justify-content: space-between;
+}
+.al_center{
+align-self: center;
+}
+.flex_start{
+    justify-content: flex-start;
+}
+.flex_end{
+    justify-content: flex-end;
+}
+.flex_center{
+    justify-content: center;
+}
+/* #endregion flex */
+
+/* #region debug */
+
+/* #region header_debug */
+.debug nav{
+    padding: 0.5rem 0;
+    background-color: var(--var-azure) ;
+}
+/* #endregion header_debug */
+
+
+
+
+
