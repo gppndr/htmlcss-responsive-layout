@@ -40,6 +40,11 @@ a {
   text-decoration: none;
 }
 
+.btn{
+    background-color: var(--var-white);
+    padding: 0.7rem;
+}
+
 /* #region column */
 .col_1 {
   width: calc(100% / 12 * 1);
@@ -143,3 +148,23 @@ a {
 /* #endregion footer_debug */
 
 /* #endregion debug */
+
+/* #region header */
+#site_header{
+    background-color: var(--var-azure);
+}
+header .container{
+    padding: 1rem 0;
+}
+header li a{
+    color: var(--var-white);
+    font-weight: 300;
+}
+header li{
+    padding-left: 2rem;
+}
+
+.btn_start{
+    color: var(--text-planning);
+    border-radius: 1.5rem;
+}
