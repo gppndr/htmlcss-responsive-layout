@@ -23,6 +23,9 @@
   max-width: 1200;
   margin: 0 auto;
 }
+section{
+    padding: 2rem 0;
+}
 ul li {
     list-style: none;
 }
@@ -75,6 +78,7 @@ a{
 }
 .row{
     display: flex;
+    margin: 0 -1rem;
 }
 .gap1{
     gap: 1rem;
@@ -110,6 +114,13 @@ align-self: center;
     background-color: var(--var-azure) ;
 }
 /* #endregion header_debug */
+
+/* #region main_debug */
+
+ .debug [class^="col"]{
+    height: 300px;
+    border: 1px solid var(--card-babyblue);
+}
 
 
 
