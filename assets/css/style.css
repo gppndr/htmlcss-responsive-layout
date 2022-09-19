@@ -5,6 +5,7 @@
   --bg-violet: #9792e4;
   --card-babyblue: #b5ddff;
   --text-cta: #fdc15f;
+  --var-gray: #5e7384;
   --var-white: #ffffff;
 }
 
@@ -39,10 +40,16 @@ ul li {
 a {
   text-decoration: none;
 }
+img {
+  max-width: 100%;
+}
 
-.btn{
-    background-color: var(--var-white);
-    padding: 0.5rem 1rem;
+.btn {
+  background-color: var(--var-white);
+  padding: 0.5rem 1rem;
+}
+.text_center {
+  text-align: center;
 }
 
 /* #region column */
@@ -91,6 +98,9 @@ a {
 .row {
   display: flex;
   margin: 0 -1rem;
+}
+[class^="col_"] {
+  padding: 1rem;
 }
 .gap1 {
   gap: 1rem;
@@ -150,21 +160,76 @@ a {
 /* #endregion debug */
 
 /* #region header */
-#site_header{
-    background-color: var(--var-azure);
+#site_header {
+  background-color: var(--var-azure);
 }
-header .container{
-    padding: 1rem 0;
+header .container {
+  padding: 1rem 0;
 }
-header li a{
-    color: var(--var-white);
-    font-weight: 300;
+header li a {
+  color: var(--var-white);
+  font-weight: 300;
 }
-header li{
-    padding-left: 2rem;
+header li {
+  padding-left: 2rem;
 }
 
-.btn_start{
-    color: var(--text-planning);
-    border-radius: 1.5rem;
+.btn_start {
+  color: var(--text-planning);
+  border-radius: 1.5rem;
 }
+/* #endregion header */
+
+/* #region main */
+/* #region what we do section */
+.blue-box {
+  background-color: var(--card-babyblue);
+  border-radius: 2rem;
+  padding: 1rem;
+  height: 100%;
+}
+.phone {
+  margin-bottom: -2rem;
+  padding-right: 4rem;
+}
+.phone img {
+  padding-top: 4rem;
+  width: 80%;
+}
+.what_we_do h2,
+.what_we_do i {
+  color: var(--var-azure);
+}
+.what_we_do h2 {
+  padding: 0rem 0 2rem 0;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.what_we_do .wwdicon {
+  font-size: 5.5rem;
+  padding: 2rem;
+}
+.what_we_do p {
+  font-weight: 500;
+  color: var(--var-gray);
+  line-height: 160%;
+  font-size: 1rem;
+  letter-spacing: 0.06rem;
+}
+.what_we_do .col_6 p {
+  padding-bottom: 5rem;
+}
+.btn_apple {
+  padding: 0.8rem 5rem;
+  background-color: var(--var-azure);
+  color: white;
+  border-radius: 2rem;
+}
+.btn_apple i {
+  color: white;
+  font-size: 1.3rem;
+}
+.btn_apple {
+  font-size: 1.1rem;
+}
+/* #enregion what we do section */
