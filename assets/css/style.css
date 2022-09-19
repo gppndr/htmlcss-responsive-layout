@@ -42,7 +42,7 @@ a {
 
 .btn{
     background-color: var(--var-white);
-    padding: 0.7rem;
+    padding: 0.5rem 1rem;
 }
 
 /* #region column */
