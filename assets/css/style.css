@@ -39,6 +39,7 @@ ul li {
 }
 a {
   text-decoration: none;
+  display: inline-block;
 }
 img {
   max-width: 100%;
@@ -52,6 +53,10 @@ img {
   text-align: center;
 }
 
+.planning,
+.benefits {
+  background-color: var(--bg-violet);
+}
 /* #region column */
 .col_1 {
   width: calc(100% / 12 * 1);
@@ -115,7 +120,10 @@ img {
   justify-content: space-between;
 }
 .al_center {
-  align-self: center;
+  align-items: center;
+}
+.al_end {
+  align-items: flex-end;
 }
 .flex_start {
   justify-content: flex-start;
@@ -235,3 +243,52 @@ header li {
 }
 /* #endregion what we do section */
 
+/* #region planning section */
+.planning [class^="col_"] {
+  padding: 0 0 2rem 3rem;
+}
+.card1_planning {
+  width: 80%;
+  color: white;
+}
+.card1_planning img {
+    width: 90%;
+  padding: 3rem 0 8rem 0;
+}
+.card1_planning h2 {
+  padding-bottom: 3rem;
+  font-size: 2rem;
+}
+.card1_planning p, .card2_planning p {
+  font-weight: 200;
+  line-height: 190%;
+  font-size: 1rem;
+  letter-spacing: 0.06rem;
+}
+.card2_planning {
+  background-color: var(--var-white);
+  border-radius: 3rem;
+  padding: 0 1rem;
+  width: 70%;
+}
+.card2_planning img {
+  padding: 1.5rem 0;
+  width: 70%;
+}
+.card2_planning img,
+.card2_planning h2,
+.card2_planning p,
+.card2_planning a {
+  padding-bottom: 1rem;
+}
+.card2_planning p{
+    font-weight: 300;
+    font-style: italic;
+}
+.card2_planning i {
+  background-color: var(--bg-violet);
+  border-radius: 50%;
+  font-size: 1rem;
+  padding: 1rem;
+}
+/* #endregion planning section */
