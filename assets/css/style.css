@@ -122,7 +122,7 @@ align-self: center;
     border: 1px solid var(--card-babyblue);
 }
 
-.debug .planning{
+.debug .planning, .debug .benefits{
     background-color: var(--bg-violet);
 }
 
