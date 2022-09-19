@@ -1,0 +1,9 @@
+/* color palette */
+:root {
+  --var-azure: #0084fd;
+  --text-planning: #272727;
+  --bg-violet: #9792e4;
+  --card-babyblue: #b5ddff;
+  --text-cta: #fdc15f;
+  --var-white: #ffffff;
+}
