@@ -292,3 +292,40 @@ header li {
   padding: 1rem;
 }
 /* #endregion planning section */
+
+/* #region testimonials section */
+.card_testimonial {
+    background-color: var(--bg-violet);
+    border-radius: 2.2rem;
+}
+.card_testimonial img{
+    height: 10rem;
+    width: 10rem;
+    object-fit: cover;
+    border-radius: 50%;
+}   
+.quote p{
+    padding-bottom: 1rem;
+}
+.quote{
+    color: var(--var-white);
+    font-weight: 300;
+}
+.quote :last-child{
+    font-size: 1.2rem;
+    font-weight:bold;
+}
+.partners .title{
+    color: var(--bg-violet);
+    font-size: 2.5rem;
+}
+.partners :first-child, .partners .title{
+    padding-bottom: 1rem;
+}
+.partners .caption{
+    font-weight: 300;
+    line-height: 190%;
+    font-size: 1rem;
+    letter-spacing: 0.09rem;
+}
+/* #endregion testimonials section */
