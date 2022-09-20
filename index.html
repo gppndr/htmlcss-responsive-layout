@@ -8,313 +8,365 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Document</title>
 </head>
 
 <body>
     <header id="site_header">
-        <div class="container d_flex sp_b ">
-            <div class="menu_logo d_flex al_center">
-                <img src="./assets/img/logo.png" alt="logo">
-            </div>
-            <div class="menu_info d_flex">
-                <nav>
-                    <ul class="d_flex al_center">
-                        <li><a href="#">Planning</a></li>
-                        <li><a href="#">Testimonials</a></li>
-                        <li><a href="#">Features</a></li>
-                        <li><a href="#">About us</a></li>
-                        <li><a class="btn btn_start" href="#">Get started</a></li>
-                    </ul>
-                </nav>
-            </div>
+        <div class="container">
+            <nav class="d_flex align_center space_between">
+                <img class="logo" src="/assets/img/logo.png" alt="logo">
+                <ul class="menu align_center">
+                    <li><a href="#">Planning</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a class="btn white t_black" href="#">Get started</a></li>
+                </ul>
+                <!-- /.menu -->
+                <i class="condensed_menu fa-solid fa-bars"></i>
+            </nav>
+            <!-- /nav -->
         </div>
+        <!-- /.container -->
     </header>
     <!-- /#site_header -->
     <main id="site_main">
         <section class="what_we_do">
             <div class="container">
                 <div class="row wrap">
-                    <div class="col_8">
-                        <div class="blue-box d_flex wrap">
-                            <div class="col_6">
-                                <h2>Get Application demo</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi vitae porro doloremque
-                                    at
-                                    odio nemo, placeat facilis! Molestiae, exercitationem iusto.</p>
-                                <a class="btn btn_apple" href="#"><span><i class="fa-brands fa-apple"></i></span> App
-                                    store</a>
+                    <div class="col_12 col_tb_8">
+                        <div class="card d_flex column">
+                            <div class="col_lg_6">
+                                <div class="caption">
+                                    <h2>Get Application demo</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi vitae porro
+                                        doloremque
+                                        at
+                                        odio nemo, placeat facilis! Molestiae, exercitationem iusto.</p>
+                                    <p><a class="btn azure t_white app_store" href="#"><i
+                                                class="fa-brands fa-apple"></i> App
+                                            Store</a></p>
+                                </div>
+                                <!-- /.caption -->
                             </div>
                             <!-- /.col_6 -->
-                            <div class="col_6 phone d_flex flex_end">
-                                <img src="/assets/img/phone.png" alt="">
+                            <div class="col_lg_6 phone">
+                                <img src="./assets/img/phone.png" alt="">
                             </div>
                             <!-- /.col_6 -->
                         </div>
-                        <!-- /blue-box -->
+                        <!-- /.card -->
                     </div>
-                    <!-- /.col_8 -->
-                    <div class="col_4">
-                        <div class="blue-box d_flex column text_center">
-                            <i class="fa-solid fa-file-code wwdicon"></i>
+                    <!-- /.col_12 col_tb_8 -->
+                    <div class="col_12 col_tb_4">
+                        <div class="card d_flex column text_center">
+                            <i class="fa-solid fa-file-code"></i>
                             <h2>Clean code</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo fugiat iste molestiae.
                                 Ipsam,
                                 ratione officiis? Quibusdam dignissimos similique consequuntur laboriosam?</p>
                         </div>
-                        <!-- /.blue-box -->
+                        <!-- /.card -->
                     </div>
-                    <!-- ./col_4 -->
-                    <div class="col_4">
-                        <div class="blue-box d_flex column text_center">
-                            <i class="fa-solid fa-compass-drafting wwdicon"></i>
+                    <!-- /.col_12 col_tb_4 -->
+                    <div class="col_12 col_tb_4">
+                        <div class="card d_flex column text_center">
+                            <i class="fa-solid fa-compass-drafting"></i>
                             <h2>Web Design</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo fugiat iste molestiae.
                                 Ipsam,
                                 ratione officiis? Quibusdam dignissimos similique consequuntur laboriosam?</p>
                         </div>
-                        <!-- /.blue-box -->
+                        <!-- /.card -->
                     </div>
-                    <!-- ./col_4 -->
-                    <div class="col_4">
-                        <div class="blue-box d_flex column text_center">
-                            <i class="fa-solid fa-laptop-code wwdicon"></i>
+                    <!-- /.col_12 col_tb_4 -->
+                    <div class="col_12 col_tb_4">
+                        <div class="card d_flex column text_center">
+                            <i class="fa-solid fa-laptop-code"></i>
                             <h2>Developement</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo fugiat iste molestiae.
                                 Ipsam,
                                 ratione officiis? Quibusdam dignissimos similique consequuntur laboriosam?</p>
                         </div>
-                        <!-- /.blue-box -->
+                        <!-- /.card -->
                     </div>
-                    <!-- ./col_4 -->
-                    <div class="col_4">
-                        <div class="blue-box d_flex column text_center">
-                            <i class="fa-solid fa-bullhorn wwdicon"></i>
+                    <!-- /.col_12 col_tb_4 -->
+                    <div class="col_12 col_tb_4">
+                        <div class="card d_flex column text_center">
+                            <i class="fa-solid fa-bullhorn"></i>
                             <h2>Branding</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo fugiat iste molestiae.
                                 Ipsam,
                                 ratione officiis? Quibusdam dignissimos similique consequuntur laboriosam?</p>
                         </div>
-                        <!-- /.blue-box -->
+                        <!-- /.card -->
                     </div>
-                    <!-- ./col_4 -->
-
+                    <!-- /.col_12 col_tb_4 -->
                 </div>
-                <!-- /.row -->
+                <!-- /.row wrap -->
             </div>
+            <!-- /.container -->
         </section>
         <!-- /.what_we_do -->
-
         <section class="planning">
             <div class="container">
                 <div class="row wrap">
-                    <div class="col_6 d_flex column al_end">
-                        <div class="card1_planning">
-                            <img src="/assets/img/planning1.png" alt="planning1">
-                            <h2>Strategic Plan</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus culpa numquam
-                                voluptatum ex assumenda magni necessitatibus, omnis quos libero explicabo rem
-                                praesentium sed a eligendi quisquam. Veniam qui rem laudantium?</p>
-                        </div>
-
+                    <div class="col_12 col_lg_6 st_plan">
+                        <img src="/assets/img/planning1.png" alt="planning1">
+                        <h2>Strategic Plan</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias ipsum temporibus ex
+                            voluptate, aspernatur odio minus iure minima, hic, aperiam quae vero animi doloremque rem.
+                        </p>
                     </div>
-                    <!-- /.col_6 -->
-                    <div class="col_6 d_flex column flex_end text_center">
-                        <div class="card2_planning">
-                            <img src="/assets/img/planning2.png" alt="">
+                    <!-- /.col_12 col_lg_6 -->
+                    <div class="col_12 col_lg_6 d_flex">
+                        <div class="card d_flex column text_center">
+                            <img src="/assets/img/planning2.png" alt="planning2">
                             <h2>App Developement</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate repellendus alias
                                 sunt, quos at voluptatem.</p>
                             <a href="#"><i class="fa-solid fa-arrow-down"></i></a>
 
-
                         </div>
                         <!-- /.card -->
-
                     </div>
-                    <!-- /.col_6 -->
+                    <!-- /.col_12 col_lg_6 -->
                 </div>
-                <!-- /.row -->
+                <!-- /.row wrap -->
             </div>
+            <!-- /.container -->
+
         </section>
         <!-- /.planning -->
-
         <section class="testimonials">
             <div class="container">
-                <div class="row wrap">
-                    <div class="col_12 partners d_flex column text_center">
-                        <p>TESTIMONIALS</p>
-                        <h2 class="title">We are committed expert partners</h2>
-                        <p class="caption">We place huge values on strong relationships and have seen the benefits they bring to our
-                            business. Customers feedback is vital helping us get in right</p>
-                    </div>
-                    <!-- /.col_12 -->
-                    <div class="col_12">
-                        <div class="card_testimonial d_flex">
-                            <div class="col_2">
-                                <img src="/assets/img/testimonial1.jpg" alt="">
-                            </div>
-                            <!-- /.col_2 -->
-                            <div class="col_10 quote d_flex column flex_center">
-                                <p><span><i class="fa-solid fa-quote-left"></i></span> Lorem ipsum dolor sit amet,
-                                    consectetur adipisicing elit. Dolores esse numquam rem a, necessitatibus quibusdam
-                                    maiores. Debitis ab deserunt amet assumenda eaque, voluptas vero perferendis
-                                    perspiciatis, porro, aliquid similique ipsa. <span><i
-                                            class="fa-solid fa-quote-right"></i></span></p>
-                                <p>NAT REYNOLDS</p>
-
-                            </div>
-                            <!-- /.col_10 -->
-                        </div>
-                        <!-- /.card_testimonial -->
-                    </div>
-                    <!-- /.col_12 -->
-                    <div class="col_12">
-                        <div class="card_testimonial d_flex">
-                            <div class="col_2">
-                                <img src="/assets/img/testimonial2.jpg" alt="">
-                            </div>
-                            <!-- /.col_2 -->
-                            <div class="col_10 quote d_flex column flex_center">
-                                <p><span><i class="fa-solid fa-quote-left"></i></span> Lorem ipsum dolor sit amet,
-                                    consectetur adipisicing elit. Dolores esse numquam rem a, necessitatibus quibusdam
-                                    maiores. Debitis ab deserunt amet assumenda eaque, voluptas vero perferendis
-                                    perspiciatis, porro, aliquid similique ipsa. <span><i
-                                            class="fa-solid fa-quote-right"></i></span></p>
-                                <p>CELIA ALMEDA</p>
-
-                            </div>
-                            <!-- /.col_10 -->
-                        </div>
-                        <!-- /.card_testimonial -->
-                    </div>
-                    <!-- /.col_12 -->
-                    <div class="col_12">
-                        <div class="card_testimonial d_flex">
-                            <div class="col_2">
-                                <img src="/assets/img/testimonial3.jpg" alt="">
-                            </div>
-                            <!-- /.col_2 -->
-                            <div class="col_10 quote d_flex column flex_center">
-                                <p><span><i class="fa-solid fa-quote-left"></i></span> Lorem ipsum dolor sit amet,
-                                    consectetur adipisicing elit. Dolores esse numquam rem a, necessitatibus quibusdam
-                                    maiores. Debitis ab deserunt amet assumenda eaque, voluptas vero perferendis
-                                    perspiciatis, porro, aliquid similique ipsa. <span><i
-                                            class="fa-solid fa-quote-right"></i></span></p>
-                                <p>BOB ROBERTS</p>
-                            </div>
-                            <!-- /.col_10 -->
-                        </div>
-                        <!-- /.card_testimonial -->
-                    </div>
-                    <!-- /.col_12 -->
+                <div class="heading text_center">
+                    <p>testimonials</p>
+                    <h2>We are committed expert partners</h2>
+                    <p id="description">We place huge values on strong relationships and have seen the benefits they
+                        bring to our
+                        business. Customers feedback is vital helping us get in right</p>
                 </div>
-                <!-- /.row -->
+                <!-- /heading -->
+                <div class="card d_flex column align_center">
+                    <div class="propic"><img src="./assets/img/testimonial1.jpg" alt="person"></div>
+                    <!-- /.propic -->
+                    <div class="info d-flex column text_center">
+                        <p><i class="fa-solid fa-quote-left"></i> Lorem ipsum dolor sit, amet consectetur adipisicing
+                            elit. Aut velit quibusdam reprehenderit unde soluta libero dignissimos, optio obcaecati
+                            tempora, voluptatibus, vero doloremque harum modi odio quae nisi quod cum error. <i
+                                class="fa-solid fa-quote-right"></i></p>
+                        <h3>NAT REYNOLDS</h3>
+                    </div>
+                    <!-- /.info -->
+                </div>
+                <!-- /card -->
+                <div class="card d_flex column align_center">
+                    <div class="propic"><img src="./assets/img/testimonial2.jpg" alt="person"></div>
+                    <!-- /.propic -->
+                    <div class="info d-flex column text_center">
+                        <p><i class="fa-solid fa-quote-left"></i> Lorem ipsum dolor sit, amet consectetur adipisicing
+                            elit. Aut velit quibusdam reprehenderit unde soluta libero dignissimos, optio obcaecati
+                            tempora, voluptatibus, vero doloremque harum modi odio quae nisi quod cum error. <i
+                                class="fa-solid fa-quote-right"></i></p>
+                        <h3>CELIA ALMEDA</h3>
+                    </div>
+                    <!-- /.info -->
+                </div>
+                <!-- /card -->
+                <div class="card d_flex column align_center">
+                    <div class="propic"><img src="./assets/img/testimonial3.jpg" alt="person"></div>
+                    <!-- /.propic -->
+                    <div class="info d-flex column text_center">
+                        <p><i class="fa-solid fa-quote-left"></i> Lorem ipsum dolor sit, amet consectetur adipisicing
+                            elit. Aut velit quibusdam reprehenderit unde soluta libero dignissimos, optio obcaecati
+                            tempora, voluptatibus, vero doloremque harum modi odio quae nisi quod cum error. <i
+                                class="fa-solid fa-quote-right"></i></p>
+                        <h3>BOB ROBERTS</h3>
+                    </div>
+                    <!-- /.info -->
+                </div>
+                <!-- /card -->
+
+
             </div>
+            <!-- /.container -->
+
         </section>
         <!-- /.testimonials -->
-
         <section class="benefits">
             <div class="container">
-                <h1 class="text_center">Benefits of working here</h1>
+                <h1 class="text_center">Benefits of working with us</h1>
                 <div class="row wrap">
-                    <div class="col_4">
-                        <div class="card_benefit">
+                    <div class="col_12 col_tb_6 col_lg_4">
+                        <div class="card">
                             <h2>01</h2>
                             <h3>High quality</h3>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga natus quisquam error? Consectetur id distinctio maxime atque ullam sed esse nemo nostrum expedita quos, deleniti aliquam sequi ad nam animi!</p>
-                            <a class="btn btn_purple" href="#">more</a>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga natus quisquam error?
+                                Consectetur id distinctio maxime atque ullam sed esse nemo nostrum expedita quos,
+                                deleniti aliquam sequi ad nam animi!</p>
+                            <a class="btn violet t_white" href="#">more</a>
                         </div>
-                        <!-- /.card_benefit -->
+                        <!-- /.card -->
                     </div>
-                    <!-- /.col_4 -->
-                    <div class="col_4">
-                        <div class="card_benefit">
+                    <!-- /.col_12 col_tb_6 col_tb_4 -->
+                    <div class="col_12 col_tb_6 col_lg_4">
+                        <div class="card">
                             <h2>02</h2>
                             <h3>Creative Team</h3>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga natus quisquam error? Consectetur id distinctio maxime atque ullam sed esse nemo nostrum expedita quos, deleniti aliquam sequi ad nam animi!</p>
-                            <a class="btn btn_purple" href="#">more</a>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga natus quisquam error?
+                                Consectetur id distinctio maxime atque ullam sed esse nemo nostrum expedita quos,
+                                deleniti aliquam sequi ad nam animi!</p>
+                            <a class="btn violet t_white" href="#">more</a>
                         </div>
-                        <!-- /.card_benefit -->
+                        <!-- /.card -->
                     </div>
-                    <!-- /.col_4 -->
-                    <div class="col_4">
-                        <div class="card_benefit">
+                    <!-- /.col_12 col_tb_6 col_tb_4 -->
+                    <div class="col_12 col_tb_6 col_lg_4">
+                        <div class="card">
                             <h2>03</h2>
                             <h3>Amazing Results</h3>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga natus quisquam error? Consectetur id distinctio maxime atque ullam sed esse nemo nostrum expedita quos, deleniti aliquam sequi ad nam animi!</p>
-                            <a class="btn btn_purple" href="#">more</a>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga natus quisquam error?
+                                Consectetur id distinctio maxime atque ullam sed esse nemo nostrum expedita quos,
+                                deleniti aliquam sequi ad nam animi!</p>
+                            <a class="btn violet t_white" href="#">more</a>
                         </div>
-                        <!-- /.card_benefit -->
+                        <!-- /.card -->
                     </div>
-                    <!-- /.col_4 -->
-                    <div class="col_4">
-                        <div class="card_benefit">
+                    <!-- /.col_12 col_tb_6 col_tb_4 -->
+                    <div class="col_12 col_tb_6 col_lg_4">
+                        <div class="card">
                             <h2>04</h2>
                             <h3>Best Pricing</h3>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga natus quisquam error? Consectetur id distinctio maxime atque ullam sed esse nemo nostrum expedita quos, deleniti aliquam sequi ad nam animi!</p>
-                            <a class="btn btn_purple" href="#">more</a>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga natus quisquam error?
+                                Consectetur id distinctio maxime atque ullam sed esse nemo nostrum expedita quos,
+                                deleniti aliquam sequi ad nam animi!</p>
+                            <a class="btn violet t_white" href="#">more</a>
                         </div>
-                        <!-- /.card_benefit -->
+                        <!-- /.card -->
                     </div>
-                    <!-- /.col_4 -->
-                    <div class="col_4">
-                        <div class="card_benefit">
+                    <!-- /.col_12 col_tb_6 col_tb_4 -->
+                    <div class="col_12 col_tb_6 col_lg_4">
+                        <div class="card">
                             <h2>05</h2>
                             <h3>Innovations</h3>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga natus quisquam error? Consectetur id distinctio maxime atque ullam sed esse nemo nostrum expedita quos, deleniti aliquam sequi ad nam animi!</p>
-                            <a class="btn btn_purple" href="#">more</a>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga natus quisquam error?
+                                Consectetur id distinctio maxime atque ullam sed esse nemo nostrum expedita quos,
+                                deleniti aliquam sequi ad nam animi!</p>
+                            <a class="btn violet t_white" href="#">more</a>
                         </div>
-                        <!-- /.card_benefit -->
+                        <!-- /.card -->
                     </div>
-                    <!-- /.col_4 -->
-                    <div class="col_4">
-                        <div class="card_benefit">
+                    <!-- /.col_12 col_tb_6 col_tb_4 -->
+                    <div class="col_12 col_tb_6 col_lg_4">
+                        <div class="card">
                             <h2>06</h2>
                             <h3>24/7 Support</h3>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga natus quisquam error? Consectetur id distinctio maxime atque ullam sed esse nemo nostrum expedita quos, deleniti aliquam sequi ad nam animi!</p>
-                            <a class="btn btn_purple" href="#">more</a>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga natus quisquam error?
+                                Consectetur id distinctio maxime atque ullam sed esse nemo nostrum expedita quos,
+                                deleniti aliquam sequi ad nam animi!</p>
+                            <a class="btn violet t_white" href="#">more</a>
                         </div>
-                        <!-- /.card_benefit -->
+                        <!-- /.card -->
                     </div>
-                    <!-- /.col_4 -->
-                    
+                    <!-- /.col_12 col_tb_6 col_tb_4 -->
                 </div>
                 <!-- /.row -->
             </div>
+            <!-- /.container -->
         </section>
         <!-- /.benefits -->
-
         <section class="about_us">
-            <div class="container_sm">
-                <div class="row">
-                    <div class="col_10"></div>
-                    <!-- /.col_10 -->
-                    <div class="col_2"></div>
-                    <!-- /.col_2 -->
+            <div class="container">
+                <div class="row wrap">
+                    <div class="col_12 col_tb_8">
+                        <h1>About us</h1>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, amet aliquid. Quos rerum
+                            voluptatibus obcaecati pariatur eveniet amet magni impedit fugit culpa neque provident id
+                            quod reprehenderit illo, suscipit ut veniam aliquam, ipsum, perferendis qui. Ab nesciunt
+                            molestiae nihil porro aliquam suscipit voluptates voluptatum. Magnam quia magni eaque minus
+                            praesentium dicta quisquam dignissimos blanditiis, obcaecati ipsum! At recusandae nisi dicta
+                            alias ad! Sint distinctio facere ab quae, eaque debitis, doloremque, soluta laudantium unde
+                            velit numquam tempore. Facilis odit quidem vel.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam natus autem veritatis. Quam
+                            cupiditate voluptas amet vero, officia dicta iure eum nemo iste numquam facilis ipsum saepe
+                            id? Molestiae labore magnam incidunt sint vel quos consectetur commodi modi, expedita
+                            officiis velit sunt nihil dolorum reiciendis quo consequatur ab. Tempora, dolor. Id
+                            dignissimos repellat officia possimus esse, illo quibusdam distinctio quidem, aliquid
+                            inventore eos numquam exercitationem sequi soluta pariatur nemo eaque unde ratione dolorem
+                            praesentium, nam facere asperiores mollitia nobis. Expedita.</p>
+                    </div>
+                    <!-- /.col_12 col_tb_8 -->
+                    <div class="col_12 col_tb_4">
+                        <div class="propic_about">
+                            <img src="/assets/img/about.jpg" alt="propic">
+                            <i class="fa-solid fa-quote-left"></i>
+                        </div>
+                        <!-- /.propic_about -->
+                        <h2>I help companies tincidunt torto aliquam nulla facilis cras fermentum odio.</h2>
+                        <a class="btn violet t_white" href=""><i class="fa-brands fa-linkedin"></i> Find me on LinkedIn
+                        </a>
+                    </div>
+                    <!-- /.col_12 col_tb_4 -->
                 </div>
                 <!-- /.row -->
             </div>
+            <!-- /.container -->
         </section>
         <!-- /.about_us -->
-
         <section class="cta">
             <div class="container">
-                <div class="col_12">
-                </div>
+                <div class="wrapper d_flex column align_center text_center">
+                    <p style="color:var(--gray);">GET STARTED</p>
+                    <h2>Simple, Transparent pricing</h2>
+                    <h1>It's free</h1>
+                    <p class="cta_description">We're still in beta and we will be for awhile. As we add
+                        morefunctionality, we'll look into other
+                        plans with more controls</p>
+                    <div><a class="btn white t_black" id="btn_t_violet" href="#">Get Started</a></div>
+                    <div class="copyright">
+                        <a href="#">Copyright 2022 Boolean</a> 
+                        <span> &bullet; </span>
+                        <a href="#">Classe 72</a> 
+                        <span> &bullet; </span>
+                        <a href="#" style="text-decoration:underline;">Privacy policy</a>
+                    </div>
             </div>
+            <!-- /.wrapper -->
+            </div>
+            <!-- /.container -->
         </section>
         <!-- /.cta -->
 
     </main>
     <!-- /#site_main -->
-    <footer id="site_footer"></footer>
+    <footer id="site_footer">
+        <div class="container">
+            <div class="wrapper text_center">
+                <div class="footer_top">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione perspiciatis ut asperiores numquam aperiam voluptates a necessitatibus dolor vitae dolores.</p>
+                </div>
+                <!-- /.footer_top -->
+                <div class="footer_bottom">
+                    <div>
+                        <a href="#">Lorem, ipsum.</a>
+                        dolor sit amet. Lorem ipsum dolor sit amet.
+                        <a href="#">Boolean Careers</a>
+                    </div>
+                </div>
+                <!-- /.footer_bottom -->
+
+            </div>
+            <!-- /.wrapper -->
+        </div>
+        <!-- /.container -->
+    </footer>
     <!-- /#site_footer -->
 
 </body>

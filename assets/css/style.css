@@ -14,49 +14,58 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: "PT Sans", sans-serif;
 }
 /* #endregion */
 
-/* #region utility */
-
+/* #region container */
 .container {
   width: 70%;
-  max-width: 1200px;
+  max-width: 480px;
   margin: 0 auto;
 }
+/* #endregion container */
 
-.container_sm {
-  width: 60%;
-  max-width: 1200px;
-  margin: 0 auto;
+/* #region flex rules */
+.d_flex {
+  display: flex;
 }
-section {
-  padding: 2rem 0;
+.row {
+  display: flex;
+  margin: 0 -1rem;
 }
-ul li {
-  list-style: none;
+[class^="col_"] {
+  padding: 1rem;
 }
-a {
-  text-decoration: none;
-  display: inline-block;
+.wrap {
+  flex-wrap: wrap;
 }
-img {
-  max-width: 100%;
+.column {
+  flex-direction: column;
 }
+.space_between {
+  justify-content: space-between;
+}
+.justify_start {
+  justify-content: flex-start;
+}
+.justify_end {
+  justify-content: flex-end;
+}
+.justify_center {
+  justify-content: center;
+}
+.align_center {
+  align-items: center;
+}
+.align_start {
+  align-items: flex-start;
+}
+.align_end {
+  align-items: flex-end;
+}
+/* #endregion flex rules */
 
-.btn {
-  background-color: var(--var-white);
-  padding: 0.5rem 1rem;
-}
-.text_center {
-  text-align: center;
-}
-
-.planning,
-.benefits {
-  background-color: var(--bg-violet);
-}
 /* #region column */
 .col_1 {
   width: calc(100% / 12 * 1);
@@ -96,279 +105,394 @@ img {
 }
 /* #endregion column */
 
-/* #region flex */
-.d_flex {
-  display: flex;
-}
-.row {
-  display: flex;
-  margin: 0 -1rem;
-}
-[class^="col_"] {
-  padding: 1rem;
-}
-.gap1 {
-  gap: 1rem;
-}
-.wrap {
-  flex-wrap: wrap;
-}
-.column {
-  flex-direction: column;
-}
-.sp_b {
-  justify-content: space-between;
-}
-.al_center {
-  align-items: center;
-}
-.al_end {
-  align-items: flex-end;
-}
-.flex_start {
-  justify-content: flex-start;
-}
-.flex_end {
-  justify-content: flex-end;
-}
-.flex_center {
-  justify-content: center;
-}
-/* #endregion flex */
-
-/* #region debug */
-
-/* #region header_debug */
-.debug #site_header {
-  padding: 0.5rem 0;
+/* region utility */
+header {
   background-color: var(--var-azure);
 }
-/* #endregion header_debug */
-
-/* #region main_debug */
-.debug [class^="col"] {
-  height: 300px;
-  border: 1px solid var(--card-babyblue);
-}
-
-.debug .planning,
-.debug .benefits,
-.debug .cta {
-  background-color: var(--bg-violet);
-}
-/* #endregion main_debug */
-
-/* #region footer_debug */
-.debug footer {
-  height: 300px;
+footer{
   background-color: var(--text-planning);
 }
-/* #endregion footer_debug */
+ul li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+section {
+  padding: 2rem 0;
+}
+img {
+  max-width: 100%;
+}
+.planning {
+  background-color: var(--bg-violet);
+}
+.text_center {
+  text-align: center;
+}
+.card {
+  border-radius: 2rem;
+}
 
-/* #endregion debug */
-
-/* #region header */
-#site_header {
+/* #region button */
+[class^="btn"] {
+  border-radius: 2rem;
+  text-align: center;
+  font-weight: 700;
+}
+.btn {
+  padding: 0.5rem 1rem;
+}
+.btn_large {
+  padding: 1.5rem 2rem;
+}
+.white {
+  background-color: var(--var-white);
+}
+.azure {
   background-color: var(--var-azure);
 }
+.violet {
+  background-color: var(--bg-violet);
+}
+.t_black {
+  color: black;
+}
+.t_white {
+  color: var(--var-white);
+}
+/* #endregion button */
+
+/* #region header */
 header .container {
   padding: 1rem 0;
 }
-header li a {
+
+.menu {
+  display: none;
+}
+.menu li {
+  padding-left: 2rem;
+}
+.menu li a:not(.btn) {
   color: var(--var-white);
   font-weight: 300;
 }
-header li {
-  padding-left: 2rem;
-}
 
-.btn_start {
-  color: var(--text-planning);
-  border-radius: 1.5rem;
+.condensed_menu {
+  color: var(--var-white);
+  font-size: 1.5rem;
 }
 /* #endregion header */
 
 /* #region main */
 
-/* #region what we do section */
-.blue-box {
+/* #region what we do */
+.what_we_do .card {
   background-color: var(--card-babyblue);
-  border-radius: 2rem;
-  padding: 1rem;
+  padding: 1.5rem;
   height: 100%;
 }
-.phone {
-  margin-bottom: -2rem;
-  padding-right: 4rem;
-}
-.phone img {
-  padding-top: 4rem;
-  width: 80%;
+.col_lg_6 {
+  padding: 0;
 }
 .what_we_do h2,
 .what_we_do i {
   color: var(--var-azure);
 }
-.what_we_do h2 {
-  padding: 0rem 0 2rem 0;
-  font-size: 1.4rem;
-  font-weight: 600;
-}
-.what_we_do .wwdicon {
-  font-size: 5.5rem;
-  padding: 2rem;
-}
 .what_we_do p {
-  font-weight: 500;
   color: var(--var-gray);
+  font-weight: 700;
+  padding: 2rem 0;
   line-height: 160%;
   font-size: 1rem;
   letter-spacing: 0.06rem;
 }
-.what_we_do .col_6 p {
-  padding-bottom: 5rem;
+.what_we_do i {
+  padding: 2rem 0;
+  font-size: 4.5rem;
 }
-.btn_apple {
-  padding: 0.8rem 5rem;
-  background-color: var(--var-azure);
+.what_we_do .app_store {
+  padding: 0.5rem 3.5rem;
+}
+.what_we_do .fa-apple {
+  font-size: 1.2rem;
   color: white;
-  border-radius: 2rem;
+  padding: 0;
 }
-.btn_apple i {
-  color: white;
-  font-size: 1.3rem;
+.phone {
+  margin-bottom: -1.8rem;
 }
-.btn_apple {
-  font-size: 1.1rem;
-}
-/* #endregion what we do section */
+/* #endregion what_we_do */
 
-/* #region planning section */
-.planning [class^="col_"] {
-  padding: 0 0 2rem 3rem;
+/* #region planning */
+.st_plan {
+  color: var(--var-white);
+  padding-bottom: 2rem;
 }
-.card1_planning {
-  width: 80%;
-  color: white;
+.st_plan img {
+  padding: 4rem 0 8rem 0;
 }
-.card1_planning img {
-  width: 90%;
-  padding: 3rem 0 8rem 0;
+.st_plan h2 {
+  font-size: 1.7rem;
 }
-.card1_planning h2 {
-  padding-bottom: 3rem;
-  font-size: 2rem;
-}
-.card1_planning p,
-.card2_planning p {
-  font-weight: 200;
-  line-height: 190%;
+.st_plan p {
+  padding: 2rem 0;
+  font-weight: 300;
+  line-height: 160%;
   font-size: 1rem;
   letter-spacing: 0.06rem;
 }
-.card2_planning {
-  background-color: var(--var-white);
-  border-radius: 3rem;
-  padding: 0 1rem;
-  width: 70%;
+.planning .card {
+  background-color: white;
+  padding: 2rem;
 }
-.card2_planning img {
-  padding: 1.5rem 0;
-  width: 70%;
+.planning .card > * {
+  padding: 1rem 0;
 }
-.card2_planning img,
-.card2_planning h2,
-.card2_planning p,
-.card2_planning a {
-  padding-bottom: 1rem;
-}
-.card2_planning p {
+.planning .card p {
   font-weight: 300;
+  line-height: 160%;
+  font-size: 1rem;
+  letter-spacing: 0.06rem;
   font-style: italic;
 }
-.card2_planning i {
+.planning .card .fa-arrow-down {
   background-color: var(--bg-violet);
   border-radius: 50%;
   font-size: 1rem;
   padding: 1rem;
 }
-/* #endregion planning section */
+/* #endregion planning */
 
-/* #region testimonials section */
-.card_testimonial {
-  background-color: var(--bg-violet);
-  border-radius: 2.2rem;
+/* #region testimonials */
+.testimonials .heading > * {
+  padding: 1rem 0;
 }
-.card_testimonial img {
-  height: 10rem;
-  width: 10rem;
-  object-fit: cover;
-  border-radius: 50%;
+
+.testimonials .heading p {
+  text-transform: uppercase;
 }
-.quote p {
-  padding-bottom: 1rem;
-}
-.quote {
-  color: var(--var-white);
-  font-weight: 300;
-}
-.quote :last-child {
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-.partners .title {
+.testimonials .heading h2 {
   color: var(--bg-violet);
   font-size: 2.5rem;
 }
-.partners :first-child,
-.partners .title {
-  padding-bottom: 1rem;
-}
-.partners .caption {
+.testimonials .heading #description,
+.card .info {
+  text-transform: none;
   font-weight: 300;
   line-height: 190%;
   font-size: 1rem;
   letter-spacing: 0.09rem;
 }
-/* #endregion testimonials section */
+.testimonials .card {
+  background-color: var(--bg-violet);
+  padding: 1rem;
+  color: white;
+  margin: 1.5rem 0;
+}
+.testimonials .card > *,
+.testimonials .card .info > * {
+  padding: 0.5rem 0;
+}
+.propic img {
+  width: 10rem;
+  height: 10rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.card .info i {
+  font-size: 1.5rem;
+}
+/* #endregion testimonials */
 
-/* #region benefits section */
+/* #region benefits */
+.benefits {
+  background-color: var(--bg-violet);
+}
 .benefits h1 {
   color: var(--var-white);
   font-size: 2.8rem;
-  padding: 2rem 0;
-}
-.card_benefit {
-  background-color: var(--var-white);
-  border-radius: 2rem;
   padding: 2rem;
 }
-.card_benefit p {
-  font-weight: 300;
+.benefits .card {
+  background-color: var(--var-white);
+  padding: 2rem;
+}
+.benefits .card h2,
+.benefits .card h3 {
+  color: var(--bg-violet);
+  font: 700;
+}
+.benefits .card h2 {
+  font-size: 6rem;
+}
+.benefits .card h3 {
+  font-size: 1.4rem;
+}
+.benefits .card p {
   line-height: 200%;
   letter-spacing: 0.06rem;
   color: var(--var-gray);
   font-size: 0.9rem;
   padding: 2rem 0;
 }
-.card_benefit h2, .card_benefit h3{
-  color: var(--bg-violet);
-}
-.card_benefit h2{
-  font-weight: 500;
-  font-size: 6rem;
-}
-.card_benefit h3{
-  font-weight: 500;
-  font-size: 1.4rem;
-}
-.btn_purple{
-  background-color: var(--bg-violet);
-  color: white;
-  border-radius: 2rem;
+.benefits .card a {
   font-size: 0.9rem;
   text-align: center;
   letter-spacing: 0.2rem;
- padding: 1rem 2.5rem;
+  padding: 1rem 2.5rem;
 }
-/* #endregion benefits section */
+/* #endregion benefits */
+/* #region about us */
+.about_us h1,
+.about_us h2 {
+  color: var(--bg-violet);
+  padding: 2rem 0;
+}
+.about_us h1 {
+  font-size: 3rem;
+}
+.about_us h2 {
+  font-size: 2rem;
+}
+.about_us p {
+  line-height: 160%;
+  font-size: 1rem;
+  letter-spacing: 0.06rem;
+  padding-bottom: 3rem;
+}
+.propic_about {
+  position: relative;
+}
+.propic_about img {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.propic_about i {
+  font-size: 3rem;
+  color: var(--bg-violet);
+  position: absolute;
+  top: 1rem;
+  left: 8rem;
+}
+.about_us a {
+  font-weight: 400;
+}
+/* #endregion about us */
+
+/* #region cta */
+.cta {
+  background-color: var(--bg-violet);
+}
+.cta .wrapper > * {
+  padding: 1rem 0;
+}
+.cta .wrapper h2,
+.cta .wrapper p,
+.cta .wrapper a, 
+.copyright span {
+  color: white;
+}
+.cta h2 {
+  font-size: 2rem;
+}
+.cta h1 {
+  font-size: 5rem;
+  color: var(--text-cta);
+}
+.cta_description {
+  line-height: 190%;
+  font-size: 1rem;
+  letter-spacing: 0.09rem;
+}
+#btn_t_violet {
+  color: var(--bg-violet);
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+}
+/* #endregion cta */
+/* #endregion main */
+
+/* #region footer */
+footer .container{
+  color: var(--var-white);
+  padding: 2rem 0;
+}
+footer .wrapper>*{
+  padding: 1rem;
+}
+.footer_bottom a{
+  text-decoration: underline;
+  color: var(--bg-violet);
+}
+/* #region responsive */
+@media screen and (min-width: 769px) {
+  .container {
+    max-width: 720px;
+  }
+  .col_tb_4 {
+    width: calc(100% / 12 * 4);
+  }
+  .col_tb_6 {
+    width: calc(100% / 12 * 6);
+  }
+  .col_tb_8 {
+    width: calc(100% / 12 * 8);
+  }
+  .what_we_do .card:not(.col_tb_4 .card) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .testimonials .card {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .card .info {
+    text-align: left;
+    padding: 1.3rem;
+    flex-basis: 70%;
+  }
+  .wrapper{
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .container {
+    max-width: 1140px;
+  }
+  .menu {
+    display: flex;
+  }
+  .condensed_menu {
+    display: none;
+  }
+  .col_lg_6 {
+    width: calc(100% / 12 * 6);
+  }
+  .col_lg_4 {
+    width: calc((100% / 12) * 4);
+  }
+  .planning .col_12 {
+    padding-left: 8rem;
+  }
+  .planning .card {
+    align-self: flex-end;
+    width: 70%;
+  }
+  .card .info {
+    flex-basis: 80%;
+  }
+  .wrapper {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+/*#endregion responsive */
